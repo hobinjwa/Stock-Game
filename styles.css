@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+#game-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#game-container fieldset {
+    border: 2px solid #ccc; 
+    border-radius: 10px;
+}
+#game-container #stock-window {
+    height: 60%;
+    border: 2px solid #ccc;
+    position: relative;
+    width: 100%;
+    overflow:scroll;
+}
+
+
+#game-container fieldset #select-speed {
+    margin: auto;
+    display: block;
+    height: 40px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#game-container #select-speed option{
+    font-size: 20px;
+}
+#game-container #text-speed {
+    display: block; 
+    text-align: center;
+    font-size: 1.2rem; 
+    color: #333;
+  }
+#game-container #select-speed:hover {
+  background-color: #4CAF50; 
+  color: #fff; 
+}
+#game-container #sell-button {
+    height: 50px;
+    border: 2px solid #E57373; 
+    background-color: #FFCDD2; 
+    color: #D32F2F; 
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#game-container #sell-button:hover {
+    background-color: #EF5350; 
+    color: #FFFFFF; 
+    transform: translateY(-2px); 
+}
+
+#game-container #buy-button {
+    height: 50px;
+    border: 2px solid #81C784; 
+    background-color: #C8E6C9;
+    color: #388E3C; 
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#game-container #buy-button:hover {
+    background-color: #66BB6A; 
+    color: #FFFFFF; 
+    transform: translateY(-2px); 
+}
+.block {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+}
+.red-block {
+    background-color: red;
+}
+.blue-block {
+    background-color: blue;
+}
