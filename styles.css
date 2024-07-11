@@ -58,7 +58,7 @@ fieldset {
     height: 80px;
 }
 
-button {
+#trading-button button {
     width: 50%;
     border-radius: 8px;
     font-weight: bold;
@@ -151,7 +151,9 @@ button {
     text-align: center;
     font-size: 20px;
 }
-
+.input-window-content div{
+    margin: 20px;
+}
 .close {
     color: #aaa;
     float: right;
@@ -169,7 +171,36 @@ button {
     align-items: center;
     justify-content: center;
 }
+#quantity-slider{
+    width: 30%;
+}
+.input-option{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.option{
+    width: 20%;
+    height: 100%;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 8px;
+    font-size: 20px;
+}
 
+.option:active {
+    transform: translateY(1px); 
+    box-shadow: 1px 1px 1px black; 
+}
+
+#confirm.option{
+    color: white;
+    background-color: rgb(0, 89, 255);
+}
+
+#cancel.option{
+    background-color: rgb(134, 134, 134);
+    color: white;
+}
 .quantity-control button {
     width: 40px;
     height: 40px;

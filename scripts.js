@@ -9,7 +9,7 @@ let balance = 10000;
 let shares = 0;
 let Variance = 0;
 
-// 모달 요소들
+// 입력창
 const inputWindow = document.getElementById('input-window');
 const close = document.getElementsByClassName('close')[0];
 const tradingTitle = document.getElementById('trading-title');
@@ -29,7 +29,7 @@ let currentTransaction = null;
 let currentQuantity = 0;
 
 function openModal(transactionType) {
-    stopGame(); // 모달이 열릴 때 그래프 생성을 멈춤
+    stopGame(); // 그래프 생성 멈추기
     inputWindow.style.display = "block";
     tradingTitle.innerText = transactionType;
     availableAmount.innerText = `${balance.toFixed(2)}원`;
